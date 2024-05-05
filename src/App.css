@@ -1,0 +1,165 @@
+* {
+  background-color: gray;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inputBox {
+  height: 2.4rem;
+  width: 750px;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #1a1a1a;
+  font-size: 1.2rem;
+  margin: 4px;
+  padding: 4px;
+}
+
+.addTodoButton {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.addTodoButton:hover {
+  background-color: #45a049;
+}
+
+.todos {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todoText {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.editButton,
+.updateButton,
+.deleteButton {
+  padding: 6px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.editButton,
+.updateButton {
+  background-color: #2196F3;
+  color: white;
+}
+
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.editButton:hover,
+.updateButton:hover,
+.deleteButton:hover {
+  opacity: 0.8;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.todos {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .2rem;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: .8rem;
+  width: 90%;
+}
+
+li {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: .8rem;
+}
+
+li p {
+  width: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  height: 3rem;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.checkBox {
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+/* for Tablet */
+@media only screen and (max-width: 768px) {
+  .inputBox {
+    width: 100%; 
+    font-size: 1rem; 
+  }
+
+  li p {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* for Mobile */
+@media only screen and (max-width: 480px) {
+  .inputBox {
+    width: 100%; 
+    font-size: 0.9rem;
+  }
+
+  li p {
+    width: 100%; 
+    font-size: 0.9rem;
+  }
+}
